@@ -168,11 +168,11 @@ snippet fields fields.related
         ${8}help='${7:Help note}'),${9}
 snippet fields fields.property
 	'${1:fieldname}': fields.property(
-        '${2:object}',
-        method=${3:True},
-		string='${4:label}',
-        type='${5:many2one}',
-        ${7}help='${6:Help note}'),${8}
+            '${2:object}',
+            view_load='${2:object}',
+	    string='${4:label}',
+            type='${5:many2one}',
+            ${7}help='${6:Help note}'),${8}
 snippet fields fields.text
 	'${1:fieldname}': fields.text(
         '${2:Label}',
